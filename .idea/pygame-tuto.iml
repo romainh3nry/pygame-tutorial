@@ -9,6 +9,7 @@
     <option name="namespacePackageFolders">
       <list>
         <option value="$MODULE_DIR$/fusee" />
+        <option value="$MODULE_DIR$/snake" />
       </list>
     </option>
   </component>
