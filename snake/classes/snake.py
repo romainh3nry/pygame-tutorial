@@ -30,3 +30,12 @@ class Snake(pygame.sprite.Sprite):
         elif self.direction == 'DOWN':
             self.image = pygame.transform.rotate(self.head, 180)
             self.rect.y += self.speed
+
+        if self.rect.x >= WIN_WIDTH:
+            self.rect.x = 0
+        elif self.rect.x < 0:
+            self.rect.x = WIN_WIDTH
+        elif self.rect.y >= WIN_HEIGHT:
+            self.rect.y = 0
+        elif self.rect.y < 0:
+            self.rect.y = WIN_HEIGHT
